@@ -30,6 +30,21 @@ angular
         controller: 'AboutCtrl',
         controllerAs: 'about'
       })
+      .when('/signup', {
+        templateUrl: 'views/signup.html',
+        controller: 'SignupCtrl',
+        controllerAs: 'signup'
+      })
+      .when('/admin', {
+        templateUrl: 'views/admin.html',
+        controller: 'AdminCtrl',
+        controllerAs: 'admin'
+      })
+      .when('/admin/test', {
+        templateUrl: 'views/admin/test.html',
+        controller: 'AdminTestCtrl',
+        controllerAs: 'admin/test'
+      })
       .otherwise({
         redirectTo: '/'
       });

@@ -57,6 +57,7 @@ app.use(cookieParser());
 // });
 
 if(app.get('env') === 'development'){
+  console.log("~~~~~~~~~~~~~~~~ IN DEVELOPEMENT MODE ~~~~~~~~~~~~~");
   app.use(express.static(path.join(__dirname, '../client')));
   app.use(express.static(path.join(__dirname, '../client/app')));
   app.use(express.static(path.join(__dirname, '../client/.tmp')));
@@ -69,6 +70,7 @@ if(app.get('env') === 'development'){
   });
 }
 if(app.get('env') === 'production'){
+  console.log("~~~~~~~~~~~~~~~~ IN PODUCTION MODE ~~~~~~~~~~~~~");
   app.use(express.static(path.join(__dirname, '/dist')));
 
   app.use(function(err, req, res, next){
