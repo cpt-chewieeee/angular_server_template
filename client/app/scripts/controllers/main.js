@@ -8,10 +8,10 @@
  * Controller of the clientApp
  */
 angular.module('clientApp')
-  	.controller('MainCtrl', function ($scope) {
-    	$scope.test = function(num){
-    		console.log(num);
-    	}
-
-
-  	});
+  .controller('MainCtrl', function () {
+    this.awesomeThings = [
+      'HTML5 Boilerplate',
+      'AngularJS',
+      'Karma'
+    ];
+  });

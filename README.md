@@ -33,7 +33,8 @@
 	> yo angular:route PATH_DIR
 
 #### To Do:
-
-	1. set up server side logger
+	
+	1. set up server side logger (done)
 	2. server side config file
 	3. mongodb config file and connection
+	4. set up intro pages (home, login, etc)(inprogress)

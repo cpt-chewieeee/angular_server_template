@@ -49,9 +49,13 @@ body {
 
 /* Main marketing message and sign up button */
 .jumbotron {
+  width: auto;
   text-align: center;
   border-bottom: 1px solid #e5e5e5;
-
+  .home-image {
+    height: 30%;
+    width: 30%;
+  }
   .btn {
     font-size: 21px;
     padding: 14px 24px;
@@ -70,7 +74,7 @@ body {
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 730px;
+    //ßmax-width: 730px;
   }
 
   /* Remove the padding we set earlier */
@@ -89,3 +93,40 @@ body {
     border-bottom: 0;
   }
 }
+/* **************************************************************************** */
+/* **************************************************************************** */
+.navbar-logo {}
+
+
+
+.hero-unit {
+  background-image:url('../images/home.jpg');
+  background-size: cover;
+  background-color: #EEEEEE;
+  height: 300px;
+  h1 {
+    color: #ffffff;
+    font-size: 60px;
+    letter-spacing: -1px;
+    line-height: 1;
+    margin-bottom: 0;
+  }
+  h2 {
+    font-size: 25px;
+    color: #FFFFFFF;
+  }
+}
+//.fill{width:100%;height:350px;background-position:center;background-size:cover;
+//}
+
+    /* Large desktop */
+    //@media (min-width: 1200px) { ... }
+     
+    /* Portrait tablet to landscape and desktop */
+    //@media (min-width: 768px) and (max-width: 979px) { ... }
+     
+    /* Landscape phone to portrait tablet */
+    //@media (max-width: 767px) { ... }
+     
+    /* Landscape phones and down */
+    //@media (max-width: 480px) { ... }
