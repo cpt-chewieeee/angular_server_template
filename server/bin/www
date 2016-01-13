@@ -8,8 +8,8 @@ app.logger = require('../system/logger')
 
 app.express_app = require('../app');
 app.express_app.set('port', 3000);
-app.mGoose = require('../system/mGoose')(app);
 
+app.mGoose = require('../system/mGoose')(app);
 
 app.server = app.http.createServer(app.express_app);
 
