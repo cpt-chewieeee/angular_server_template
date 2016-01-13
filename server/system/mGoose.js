@@ -14,6 +14,8 @@ function mGoose (app, host, port, database) {
 	console.log(database);
 	this.mongoose = require('mongoose');
 	this.connection = 'mongodb://' + 'localhost' + ':' + '27017/test';
+	this.app = app;
+	app.logger.info('DB up [' + host + ':' + port + '/' + database + ']');
 }
 
 module.exports = function(app){

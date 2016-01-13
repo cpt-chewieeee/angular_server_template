@@ -2,5 +2,9 @@ var app = {};
 
 app.root_dir = __dirname;
 app.config = require('../config')();
-app.mGoose = require('../system/mGoose.js')(app);
+app.logger = require('../system/logger')
+
+
+app.mGoose = require('../system/mGoose')(app);
+
 console.log(app.config.db_host);
