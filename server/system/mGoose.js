@@ -8,10 +8,10 @@
 //   console.log('meow');
 // });
 function mGoose (app, host, port, database) {
-	console.log(app);
-	console.log(host);
-	console.log(port);
-	console.log(database);
+	// console.log(app);
+	// console.log(host);
+	// console.log(port);
+	// console.log(database);
 	this.mongoose = require('mongoose');
 	this.connection = 'mongodb://' + 'localhost' + ':' + '27017/test';
 	this.app = app;

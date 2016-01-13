@@ -33,22 +33,22 @@ Logger.prototype.log = function(type, msg, file_prefix)
 
 Logger.prototype.error = function(msg)
 {
-	this.log("ERROR", msg);
+	this.log("[ERROR]", msg);
 }
 
 Logger.prototype.info = function(msg)
 {
-	this.log("INFO ", msg);
+	this.log("[INFO] ", msg);
 }
 
 Logger.prototype.warn = function(msg)
 {
-	this.log("WARN ", msg);
+	this.log("[WARN] ", msg);
 }
 
 Logger.prototype.debug = function(msg)
 {
-	this.log("DEBUG", msg);
+	this.log("[DEBUG]", msg);
 }
 
 module.exports = new Logger();

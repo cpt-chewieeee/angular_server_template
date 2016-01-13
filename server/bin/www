@@ -1,10 +1,58 @@
 var app = {};
 
 app.root_dir = __dirname;
+app.http = require('http');
+app.debug = require('debug')('server:server');
 app.config = require('../config')();
 app.logger = require('../system/logger')
 
-
+app.express_app = require('../app');
+app.express_app.set('port', 3000);
 app.mGoose = require('../system/mGoose')(app);
 
-console.log(app.config.db_host);
+
+app.server = app.http.createServer(app.express_app);
+
+app.server.listen(3000);
+app.server.on('error', onError);
+app.server.on('listening', onListening);
+
+/**
+ * Event listener for HTTP server "error" event.
+ */
+
+function onError(error) {
+  if (error.syscall !== 'listen') {
+    throw error;
+  }
+
+  var bind = typeof port === 'string'
+    ? 'Pipe ' + port
+    : 'Port ' + port;
+
+  // handle specific listen errors with friendly messages
+  switch (error.code) {
+    case 'EACCES':
+      console.error(bind + ' requires elevated privileges');
+      process.exit(1);
+      break;
+    case 'EADDRINUSE':
+      console.error(bind + ' is already in use');
+      process.exit(1);
+      break;
+    default:
+      throw error;
+  }
+}
+
+/**
+ * Event listener for HTTP server "listening" event.
+ */
+
+function onListening() {
+  var addr = app.server.address();
+  var bind = typeof addr === 'string'
+    ? 'pipe ' + addr
+    : 'port ' + addr.port;
+  app.debug('Listening on ' + bind);
+}
