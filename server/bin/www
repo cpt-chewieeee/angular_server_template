@@ -1,19 +1,35 @@
 var app = {};
+var fs = require('fs');
+
 
 app.root_dir = __dirname;
-app.http = require('http');
-app.debug = require('debug')('server:server');
 app.config = require('../config')();
-app.logger = require('../system/logger')
 
+app.logger = require('../system/logger')
 app.express_app = require('../app');
-app.express_app.set('port', 3000);
+
+app.debug = require('debug')('server:server');
 
 app.mGoose = require('../system/mGoose')(app);
 
-app.server = app.http.createServer(app.express_app);
+app.express_app.set('port', app.config.port);
 
-app.server.listen(3000);
+app.server_options = {
+  key: fs.readFileSync('keys/key.pem'),
+  cert: fs.readFileSync('keys/cert.pem')
+}
+
+if(app.config.server_type == 'http'){
+  app.http = require('http');
+  app.server = app.http.createServer(app.express_app);
+}
+else {
+  app.https = require('https');
+  app.server = app.htpps.createServer(app.server_options, app.express_app);
+}
+
+
+app.server.listen(app.config.port);
 app.server.on('error', onError);
 app.server.on('listening', onListening);
 
