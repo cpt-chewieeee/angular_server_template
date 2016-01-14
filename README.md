@@ -47,4 +47,4 @@ to run the server in https:
 	2. create certificate with openssl  
 		> example: openssl req -x509 -newkey rsa:2048 -keyout key.pem -out cert.pem -days 365
 		> to remove the password: openssl rsa -in key.pem -out newkey.pem && mv newkey.pem key.pem
-	3. add the certificate to chrome (if your using it)
+	3. add the certificate to chrome (if your using it). [Im using firefox developer edition]

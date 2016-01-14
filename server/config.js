@@ -4,7 +4,7 @@ function Config() {
 	this.db_database = 'test';
 
 	this.port = 3000;
-	this.server_type = 'http';
+	this.server_type = 'https';
 }
 module.exports = function() {
 	return new Config();

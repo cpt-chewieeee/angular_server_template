@@ -25,7 +25,7 @@ if(app.config.server_type == 'http'){
 }
 else {
   app.https = require('https');
-  app.server = app.htpps.createServer(app.server_options, app.express_app);
+  app.server = app.https.createServer(app.server_options, app.express_app);
 }
 
 
