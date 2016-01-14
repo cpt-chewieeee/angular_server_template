@@ -35,6 +35,16 @@
 #### To Do:
 	
 	1. set up server side logger (done)
-	2. server side config file
-	3. mongodb config file and connection
+	2. server side config file (done)
+	3. mongodb config file and connection (done)
 	4. set up intro pages (home, login, etc)(inprogress)
+
+--------------------------------------------------------------------
+# NOTES
+
+to run the server in https:
+	1. change config file
+	2. create certificate with openssl  
+		> example: openssl req -x509 -newkey rsa:2048 -keyout key.pem -out cert.pem -days 365
+		> to remove the password: openssl rsa -in key.pem -out newkey.pem && mv newkey.pem key.pem
+	3. add the certificate to chrome (if your using it)
