@@ -1,0 +1,360 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'generator-phonegap' ]
+2 info using npm@3.5.2
+3 info using node@v4.1.2
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readGlobalPackageData
+7 silly fetchPackageMetaData generator-phonegap
+8 silly fetchNamedPackageData generator-phonegap
+9 silly mapToRegistry name generator-phonegap
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry uri https://registry.npmjs.org/generator-phonegap
+13 verbose request uri https://registry.npmjs.org/generator-phonegap
+14 verbose request no auth needed
+15 info attempt registry request try #1 at 6:56:42 PM
+16 verbose request id 8eac679d20386eb6
+17 verbose etag "BZYUHBC3TBMYB3SM02FEIWME7"
+18 http request GET https://registry.npmjs.org/generator-phonegap
+19 http 304 https://registry.npmjs.org/generator-phonegap
+20 verbose headers { date: 'Thu, 14 Jan 2016 02:56:43 GMT',
+20 verbose headers   via: '1.1 varnish',
+20 verbose headers   'cache-control': 'max-age=300',
+20 verbose headers   etag: '"BZYUHBC3TBMYB3SM02FEIWME7"',
+20 verbose headers   age: '0',
+20 verbose headers   connection: 'keep-alive',
+20 verbose headers   'x-served-by': 'cache-lax1424-LAX',
+20 verbose headers   'x-cache': 'MISS',
+20 verbose headers   'x-cache-hits': '0',
+20 verbose headers   'x-timer': 'S1452740203.203087,VS0,VE81',
+20 verbose headers   vary: 'Accept' }
+21 silly get cb [ 304,
+21 silly get   { date: 'Thu, 14 Jan 2016 02:56:43 GMT',
+21 silly get     via: '1.1 varnish',
+21 silly get     'cache-control': 'max-age=300',
+21 silly get     etag: '"BZYUHBC3TBMYB3SM02FEIWME7"',
+21 silly get     age: '0',
+21 silly get     connection: 'keep-alive',
+21 silly get     'x-served-by': 'cache-lax1424-LAX',
+21 silly get     'x-cache': 'MISS',
+21 silly get     'x-cache-hits': '0',
+21 silly get     'x-timer': 'S1452740203.203087,VS0,VE81',
+21 silly get     vary: 'Accept' } ]
+22 verbose etag https://registry.npmjs.org/generator-phonegap from cache
+23 verbose get saving generator-phonegap to /Users/hongyizhang/.npm/registry.npmjs.org/generator-phonegap/.cache.json
+24 silly install normalizeTree
+25 silly loadCurrentTree Finishing
+26 silly loadIdealTree Starting
+27 silly install loadIdealTree
+28 silly cloneCurrentTree Starting
+29 silly install cloneCurrentTreeToIdealTree
+30 silly cloneCurrentTree Finishing
+31 silly loadShrinkwrap Starting
+32 silly install loadShrinkwrap
+33 silly loadShrinkwrap Finishing
+34 silly loadAllDepsIntoIdealTree Starting
+35 silly install loadAllDepsIntoIdealTree
+36 silly resolveWithNewModule generator-phonegap@0.1.2 checking installable status
+37 silly cache add args [ 'generator-phonegap', null ]
+38 verbose cache add spec generator-phonegap
+39 silly cache add parsed spec Result {
+39 silly cache add   raw: 'generator-phonegap',
+39 silly cache add   scope: null,
+39 silly cache add   name: 'generator-phonegap',
+39 silly cache add   rawSpec: '',
+39 silly cache add   spec: 'latest',
+39 silly cache add   type: 'tag' }
+40 silly addNamed generator-phonegap@latest
+41 verbose addNamed "latest" is being treated as a dist-tag for generator-phonegap
+42 info addNameTag [ 'generator-phonegap', 'latest' ]
+43 silly mapToRegistry name generator-phonegap
+44 silly mapToRegistry using default registry
+45 silly mapToRegistry registry https://registry.npmjs.org/
+46 silly mapToRegistry uri https://registry.npmjs.org/generator-phonegap
+47 verbose addNameTag registry:https://registry.npmjs.org/generator-phonegap not in flight; fetching
+48 verbose get https://registry.npmjs.org/generator-phonegap not expired, no request
+49 silly addNameTag next cb for generator-phonegap with tag latest
+50 silly addNamed generator-phonegap@0.1.2
+51 verbose addNamed "0.1.2" is a plain semver version for generator-phonegap
+52 silly cache afterAdd generator-phonegap@0.1.2
+53 verbose afterAdd /Users/hongyizhang/.npm/generator-phonegap/0.1.2/package/package.json not in flight; writing
+54 verbose afterAdd /Users/hongyizhang/.npm/generator-phonegap/0.1.2/package/package.json written
+55 silly fetchNamedPackageData yeoman-generator
+56 silly mapToRegistry name yeoman-generator
+57 silly mapToRegistry using default registry
+58 silly mapToRegistry registry https://registry.npmjs.org/
+59 silly mapToRegistry uri https://registry.npmjs.org/yeoman-generator
+60 silly fetchNamedPackageData phonegap
+61 silly mapToRegistry name phonegap
+62 silly mapToRegistry using default registry
+63 silly mapToRegistry registry https://registry.npmjs.org/
+64 silly mapToRegistry uri https://registry.npmjs.org/phonegap
+65 silly fetchNamedPackageData extended-fs
+66 silly mapToRegistry name extended-fs
+67 silly mapToRegistry using default registry
+68 silly mapToRegistry registry https://registry.npmjs.org/
+69 silly mapToRegistry uri https://registry.npmjs.org/extended-fs
+70 verbose request uri https://registry.npmjs.org/extended-fs
+71 verbose request no auth needed
+72 info attempt registry request try #1 at 6:56:43 PM
+73 verbose etag "854VUDOYJZBLAAZHH3SB8LQZF"
+74 http request GET https://registry.npmjs.org/extended-fs
+75 verbose request uri https://registry.npmjs.org/yeoman-generator
+76 verbose request no auth needed
+77 info attempt registry request try #1 at 6:56:43 PM
+78 verbose etag "7ZZI60KZOK0Y9JHNTJUTMAG1B"
+79 http request GET https://registry.npmjs.org/yeoman-generator
+80 verbose request uri https://registry.npmjs.org/phonegap
+81 verbose request no auth needed
+82 info attempt registry request try #1 at 6:56:43 PM
+83 verbose etag "CDC0UJZYQY2Q1CYJH77EJR3TC"
+84 http request GET https://registry.npmjs.org/phonegap
+85 http 304 https://registry.npmjs.org/yeoman-generator
+86 verbose headers { date: 'Thu, 14 Jan 2016 02:56:43 GMT',
+86 verbose headers   via: '1.1 varnish',
+86 verbose headers   'cache-control': 'max-age=300',
+86 verbose headers   etag: '"7ZZI60KZOK0Y9JHNTJUTMAG1B"',
+86 verbose headers   age: '290',
+86 verbose headers   connection: 'keep-alive',
+86 verbose headers   'x-served-by': 'cache-lax1420-LAX',
+86 verbose headers   'x-cache': 'HIT',
+86 verbose headers   'x-cache-hits': '46',
+86 verbose headers   'x-timer': 'S1452740203.466953,VS0,VE0',
+86 verbose headers   vary: 'Accept' }
+87 silly get cb [ 304,
+87 silly get   { date: 'Thu, 14 Jan 2016 02:56:43 GMT',
+87 silly get     via: '1.1 varnish',
+87 silly get     'cache-control': 'max-age=300',
+87 silly get     etag: '"7ZZI60KZOK0Y9JHNTJUTMAG1B"',
+87 silly get     age: '290',
+87 silly get     connection: 'keep-alive',
+87 silly get     'x-served-by': 'cache-lax1420-LAX',
+87 silly get     'x-cache': 'HIT',
+87 silly get     'x-cache-hits': '46',
+87 silly get     'x-timer': 'S1452740203.466953,VS0,VE0',
+87 silly get     vary: 'Accept' } ]
+88 verbose etag https://registry.npmjs.org/yeoman-generator from cache
+89 verbose get saving yeoman-generator to /Users/hongyizhang/.npm/registry.npmjs.org/yeoman-generator/.cache.json
+90 silly resolveWithNewModule yeoman-generator@0.13.4 checking installable status
+91 silly cache add args [ 'yeoman-generator@~0.13.0', null ]
+92 verbose cache add spec yeoman-generator@~0.13.0
+93 silly cache add parsed spec Result {
+93 silly cache add   raw: 'yeoman-generator@~0.13.0',
+93 silly cache add   scope: null,
+93 silly cache add   name: 'yeoman-generator',
+93 silly cache add   rawSpec: '~0.13.0',
+93 silly cache add   spec: '>=0.13.0 <0.14.0',
+93 silly cache add   type: 'range' }
+94 silly addNamed yeoman-generator@>=0.13.0 <0.14.0
+95 verbose addNamed ">=0.13.0 <0.14.0" is a valid semver range for yeoman-generator
+96 silly addNameRange { name: 'yeoman-generator',
+96 silly addNameRange   range: '>=0.13.0 <0.14.0',
+96 silly addNameRange   hasData: false }
+97 silly mapToRegistry name yeoman-generator
+98 silly mapToRegistry using default registry
+99 silly mapToRegistry registry https://registry.npmjs.org/
+100 silly mapToRegistry uri https://registry.npmjs.org/yeoman-generator
+101 verbose addNameRange registry:https://registry.npmjs.org/yeoman-generator not in flight; fetching
+102 verbose get https://registry.npmjs.org/yeoman-generator not expired, no request
+103 silly addNameRange number 2 { name: 'yeoman-generator',
+103 silly addNameRange   range: '>=0.13.0 <0.14.0',
+103 silly addNameRange   hasData: true }
+104 silly addNameRange versions [ 'yeoman-generator',
+104 silly addNameRange   [ '0.10.0',
+104 silly addNameRange     '0.10.1',
+104 silly addNameRange     '0.10.2',
+104 silly addNameRange     '0.10.3',
+104 silly addNameRange     '0.10.4',
+104 silly addNameRange     '0.10.5',
+104 silly addNameRange     '0.11.0',
+104 silly addNameRange     '0.11.1',
+104 silly addNameRange     '0.11.2',
+104 silly addNameRange     '0.11.3',
+104 silly addNameRange     '0.11.4',
+104 silly addNameRange     '0.12.0',
+104 silly addNameRange     '0.12.1',
+104 silly addNameRange     '0.12.2',
+104 silly addNameRange     '0.12.3',
+104 silly addNameRange     '0.13.0',
+104 silly addNameRange     '0.13.1',
+104 silly addNameRange     '0.13.2',
+104 silly addNameRange     '0.13.3',
+104 silly addNameRange     '0.13.4',
+104 silly addNameRange     '0.14.0-rc.1',
+104 silly addNameRange     '0.14.0-rc.2',
+104 silly addNameRange     '0.14.0',
+104 silly addNameRange     '0.14.1',
+104 silly addNameRange     '0.14.2',
+104 silly addNameRange     '0.15.0-pre.1',
+104 silly addNameRange     '0.15.0-pre.2',
+104 silly addNameRange     '0.15.0-pre.3',
+104 silly addNameRange     '0.15.0',
+104 silly addNameRange     '0.16.0',
+104 silly addNameRange     '0.17.0-pre.1',
+104 silly addNameRange     '0.17.0-pre.2',
+104 silly addNameRange     '0.17.0-pre.3',
+104 silly addNameRange     '0.17.0-pre.4',
+104 silly addNameRange     '0.17.0',
+104 silly addNameRange     '0.17.1',
+104 silly addNameRange     '0.17.2',
+104 silly addNameRange     '0.17.3',
+104 silly addNameRange     '0.17.4',
+104 silly addNameRange     '0.17.5',
+104 silly addNameRange     '0.17.6',
+104 silly addNameRange     '0.17.7',
+104 silly addNameRange     '0.18.0-pre.1',
+104 silly addNameRange     '0.18.0-pre.2',
+104 silly addNameRange     '0.18.0-pre.3',
+104 silly addNameRange     '0.18.0',
+104 silly addNameRange     '0.18.1',
+104 silly addNameRange     '0.18.2',
+104 silly addNameRange     '0.18.3',
+104 silly addNameRange     '0.18.4',
+104 silly addNameRange     '0.18.5',
+104 silly addNameRange     '0.18.6',
+104 silly addNameRange     '0.18.7',
+104 silly addNameRange     '0.18.8',
+104 silly addNameRange     '0.18.9',
+104 silly addNameRange     '0.18.10',
+104 silly addNameRange     '0.19.0',
+104 silly addNameRange     '0.19.1',
+104 silly addNameRange     '0.19.2',
+104 silly addNameRange     '0.20.0',
+104 silly addNameRange     '0.20.1',
+104 silly addNameRange     '0.20.2',
+104 silly addNameRange     '0.20.3',
+104 silly addNameRange     '0.21.0',
+104 silly addNameRange     '0.21.1',
+104 silly addNameRange     '0.22.0',
+104 silly addNameRange     '0.22.1',
+104 silly addNameRange     '0.22.2',
+104 silly addNameRange     '0.22.3' ] ]
+105 silly addNamed yeoman-generator@0.13.4
+106 verbose addNamed "0.13.4" is a plain semver version for yeoman-generator
+107 silly cache afterAdd yeoman-generator@0.13.4
+108 verbose afterAdd /Users/hongyizhang/.npm/yeoman-generator/0.13.4/package/package.json not in flight; writing
+109 verbose afterAdd /Users/hongyizhang/.npm/yeoman-generator/0.13.4/package/package.json written
+110 http 304 https://registry.npmjs.org/phonegap
+111 verbose headers { date: 'Thu, 14 Jan 2016 02:56:43 GMT',
+111 verbose headers   via: '1.1 varnish',
+111 verbose headers   'cache-control': 'max-age=300',
+111 verbose headers   etag: '"CDC0UJZYQY2Q1CYJH77EJR3TC"',
+111 verbose headers   age: '0',
+111 verbose headers   connection: 'keep-alive',
+111 verbose headers   'x-served-by': 'cache-lax1422-LAX',
+111 verbose headers   'x-cache': 'HIT',
+111 verbose headers   'x-cache-hits': '1',
+111 verbose headers   'x-timer': 'S1452740203.476849,VS0,VE46',
+111 verbose headers   vary: 'Accept' }
+112 silly get cb [ 304,
+112 silly get   { date: 'Thu, 14 Jan 2016 02:56:43 GMT',
+112 silly get     via: '1.1 varnish',
+112 silly get     'cache-control': 'max-age=300',
+112 silly get     etag: '"CDC0UJZYQY2Q1CYJH77EJR3TC"',
+112 silly get     age: '0',
+112 silly get     connection: 'keep-alive',
+112 silly get     'x-served-by': 'cache-lax1422-LAX',
+112 silly get     'x-cache': 'HIT',
+112 silly get     'x-cache-hits': '1',
+112 silly get     'x-timer': 'S1452740203.476849,VS0,VE46',
+112 silly get     vary: 'Accept' } ]
+113 verbose etag https://registry.npmjs.org/phonegap from cache
+114 verbose get saving phonegap to /Users/hongyizhang/.npm/registry.npmjs.org/phonegap/.cache.json
+115 silly fetchPackageMetaData Error: No compatible version found: phonegap@~3.1.0
+115 silly fetchPackageMetaData Valid install targets:
+115 silly fetchPackageMetaData 5.4.0, 5.3.10, 5.3.9, 5.3.8, 5.3.7, 5.3.6, 5.3.5, 5.3.4, 5.3.3, 5.3.2, 5.3.1, 5.2.3, 5.2.2, 5.2.1, 5.2.0, 5.1.1, 5.1.1-0.29.0, 5.0.0-0.28.1, 5.0.0-0.28.0, 5.0.0-0.27.1, 5.0.0-0.27.0, 4.2.0-0.26.0, 4.2.0-0.25.0, 4.2.0-0.24.2, 4.2.0-0.24.1, 4.2.0-0.24.0, 4.2.0-0.23.0, 4.1.2-0.22.12, 4.1.2-0.22.11, 4.1.2-0.22.10, 4.1.2-0.22.9, 4.1.2-0.22.8, 4.1.2-0.22.7, 4.0.0-0.22.7, 3.6.3-0.22.7, 3.6.3-0.22.6, 3.6.3-0.22.5, 3.6.3-0.22.4, 3.6.3-0.22.3, 3.6.3-0.22.2, 3.6.3-0.22.1, 3.6.3-0.22.0, 3.6.0-0.21.19, 3.6.0-0.21.18, 3.5.0-0.21.18, 3.5.0-0.21.17, 3.5.0-0.21.16, 3.5.0-0.21.15, 3.5.0-0.21.14, 3.5.0-0.20.14, 3.5.0-0.20.10, 3.5.0-0.20.9, 3.5.0-0.20.7, 3.5.0-0.20.6, 3.5.0-0.20.5, 3.5.0-0.20.4, 3.5.0-0.20.3, 3.5.0-0.20.1, 3.5.0-0.20.0, 3.5.0-0.19.23, 3.4.0-0.20.0, 3.4.0-0.19.21, 3.4.0-0.19.20, 3.4.0-0.19.19, 3.4.0-0.19.18, 3.4.0-0.19.17, 3.4.0-0.19.16, 3.4.0-0.19.15, 3.4.0-0.19.14, 3.4.0-0.19.13, 3.4.0-0.19.12, 3.4.0-0.19.11, 3.4.0-0.19.10, 3.4.0-0.19.9, 3.4.0-0.19.8, 3.4.0-0.19.7, 3.3.0-0.19.6, 3.3.0-0.19.5, 3.3.0-0.19.4, 3.3.0-0.19.3, 3.3.0-0.19.2, 3.3.0-0.19.1, 3.3.0-0.19.0, 3.3.0-0.18.1, 3.3.0-0.18.0, 3.3.0-0.17.1, 3.2.0-0.17.1, 3.2.0-0.17.0, 3.2.0-0.16.0, 3.2.0-0.15.0, 3.1.0-0.15.0, 3.0.0-rc1-0.13.3, 3.0.0-rc1-0.13.2, 3.0.0-0.14.4, 3.0.0-0.14.3, 3.0.0-0.14.2, 3.0.0-0.14.1, 3.0.0-0.14.0, 2.9.0-rc1-0.12.2, 2.9.0-rc1-0.12.1, 2.9.0-rc1-0.12.0, 2.9.0-0.13.2, 2.9.0-0.13.1, 2.9.0-0.13.0, 2.9.0-0.12.11, 2.9.0-0.12.10, 2.9.0-0.12.9, 2.9.0-0.12.8, 2.9.0-0.12.7, 2.9.0-0.12.6, 2.9.0-0.12.5, 2.9.0-0.12.4, 2.9.0-0.12.3, 2.9.0-0.12.2, 2.8.1-0.11.0, 2.8.0-0.10.6, 2.8.0-0.10.4, 2.8.0-0.10.3, 2.8.0-0.10.2, 2.8.0-0.10.1, 2.8.0-0.10.0, 0.9.4, 0.9.3, 0.9.2, 0.9.1, 0.9.0, 0.8.1, 0.8.0, 0.7.8, 0.7.7, 0.7.6, 0.7.5, 0.7.4, 0.7.3, 0.7.2, 0.7.1, 0.7.0, 0.6.1, 0.6.0, 0.5.0, 0.4.1, 0.4.0, 0.3.0, 0.2.2, 0.2.1, 0.2.0
+115 silly fetchPackageMetaData
+115 silly fetchPackageMetaData     at pickVersionFromRegistryDocument (/usr/local/lib/node_modules/npm/lib/fetch-package-metadata.js:156:16)
+115 silly fetchPackageMetaData     at /usr/local/lib/node_modules/npm/node_modules/iferr/index.js:13:50
+115 silly fetchPackageMetaData     at /usr/local/lib/node_modules/npm/lib/utils/pulse-till-done.js:19:8
+115 silly fetchPackageMetaData     at saved (/usr/local/lib/node_modules/npm/lib/cache/caching-client.js:168:7)
+115 silly fetchPackageMetaData     at /usr/local/lib/node_modules/npm/node_modules/graceful-fs/polyfills.js:210:7
+115 silly fetchPackageMetaData     at FSReqWrap.oncomplete (fs.js:82:15)
+115 silly fetchPackageMetaData  error for phonegap@~3.1.0 [Error: No compatible version found: phonegap@~3.1.0
+115 silly fetchPackageMetaData Valid install targets:
+115 silly fetchPackageMetaData 5.4.0, 5.3.10, 5.3.9, 5.3.8, 5.3.7, 5.3.6, 5.3.5, 5.3.4, 5.3.3, 5.3.2, 5.3.1, 5.2.3, 5.2.2, 5.2.1, 5.2.0, 5.1.1, 5.1.1-0.29.0, 5.0.0-0.28.1, 5.0.0-0.28.0, 5.0.0-0.27.1, 5.0.0-0.27.0, 4.2.0-0.26.0, 4.2.0-0.25.0, 4.2.0-0.24.2, 4.2.0-0.24.1, 4.2.0-0.24.0, 4.2.0-0.23.0, 4.1.2-0.22.12, 4.1.2-0.22.11, 4.1.2-0.22.10, 4.1.2-0.22.9, 4.1.2-0.22.8, 4.1.2-0.22.7, 4.0.0-0.22.7, 3.6.3-0.22.7, 3.6.3-0.22.6, 3.6.3-0.22.5, 3.6.3-0.22.4, 3.6.3-0.22.3, 3.6.3-0.22.2, 3.6.3-0.22.1, 3.6.3-0.22.0, 3.6.0-0.21.19, 3.6.0-0.21.18, 3.5.0-0.21.18, 3.5.0-0.21.17, 3.5.0-0.21.16, 3.5.0-0.21.15, 3.5.0-0.21.14, 3.5.0-0.20.14, 3.5.0-0.20.10, 3.5.0-0.20.9, 3.5.0-0.20.7, 3.5.0-0.20.6, 3.5.0-0.20.5, 3.5.0-0.20.4, 3.5.0-0.20.3, 3.5.0-0.20.1, 3.5.0-0.20.0, 3.5.0-0.19.23, 3.4.0-0.20.0, 3.4.0-0.19.21, 3.4.0-0.19.20, 3.4.0-0.19.19, 3.4.0-0.19.18, 3.4.0-0.19.17, 3.4.0-0.19.16, 3.4.0-0.19.15, 3.4.0-0.19.14, 3.4.0-0.19.13, 3.4.0-0.19.12, 3.4.0-0.19.11, 3.4.0-0.19.10, 3.4.0-0.19.9, 3.4.0-0.19.8, 3.4.0-0.19.7, 3.3.0-0.19.6, 3.3.0-0.19.5, 3.3.0-0.19.4, 3.3.0-0.19.3, 3.3.0-0.19.2, 3.3.0-0.19.1, 3.3.0-0.19.0, 3.3.0-0.18.1, 3.3.0-0.18.0, 3.3.0-0.17.1, 3.2.0-0.17.1, 3.2.0-0.17.0, 3.2.0-0.16.0, 3.2.0-0.15.0, 3.1.0-0.15.0, 3.0.0-rc1-0.13.3, 3.0.0-rc1-0.13.2, 3.0.0-0.14.4, 3.0.0-0.14.3, 3.0.0-0.14.2, 3.0.0-0.14.1, 3.0.0-0.14.0, 2.9.0-rc1-0.12.2, 2.9.0-rc1-0.12.1, 2.9.0-rc1-0.12.0, 2.9.0-0.13.2, 2.9.0-0.13.1, 2.9.0-0.13.0, 2.9.0-0.12.11, 2.9.0-0.12.10, 2.9.0-0.12.9, 2.9.0-0.12.8, 2.9.0-0.12.7, 2.9.0-0.12.6, 2.9.0-0.12.5, 2.9.0-0.12.4, 2.9.0-0.12.3, 2.9.0-0.12.2, 2.8.1-0.11.0, 2.8.0-0.10.6, 2.8.0-0.10.4, 2.8.0-0.10.3, 2.8.0-0.10.2, 2.8.0-0.10.1, 2.8.0-0.10.0, 0.9.4, 0.9.3, 0.9.2, 0.9.1, 0.9.0, 0.8.1, 0.8.0, 0.7.8, 0.7.7, 0.7.6, 0.7.5, 0.7.4, 0.7.3, 0.7.2, 0.7.1, 0.7.0, 0.6.1, 0.6.0, 0.5.0, 0.4.1, 0.4.0, 0.3.0, 0.2.2, 0.2.1, 0.2.0
+115 silly fetchPackageMetaData ]
+116 http 304 https://registry.npmjs.org/extended-fs
+117 verbose headers { date: 'Thu, 14 Jan 2016 02:56:43 GMT',
+117 verbose headers   via: '1.1 varnish',
+117 verbose headers   'cache-control': 'max-age=300',
+117 verbose headers   etag: '"854VUDOYJZBLAAZHH3SB8LQZF"',
+117 verbose headers   age: '0',
+117 verbose headers   connection: 'keep-alive',
+117 verbose headers   'x-served-by': 'cache-lax1431-LAX',
+117 verbose headers   'x-cache': 'MISS',
+117 verbose headers   'x-cache-hits': '0',
+117 verbose headers   'x-timer': 'S1452740203.461767,VS0,VE87',
+117 verbose headers   vary: 'Accept' }
+118 silly get cb [ 304,
+118 silly get   { date: 'Thu, 14 Jan 2016 02:56:43 GMT',
+118 silly get     via: '1.1 varnish',
+118 silly get     'cache-control': 'max-age=300',
+118 silly get     etag: '"854VUDOYJZBLAAZHH3SB8LQZF"',
+118 silly get     age: '0',
+118 silly get     connection: 'keep-alive',
+118 silly get     'x-served-by': 'cache-lax1431-LAX',
+118 silly get     'x-cache': 'MISS',
+118 silly get     'x-cache-hits': '0',
+118 silly get     'x-timer': 'S1452740203.461767,VS0,VE87',
+118 silly get     vary: 'Accept' } ]
+119 verbose etag https://registry.npmjs.org/extended-fs from cache
+120 verbose get saving extended-fs to /Users/hongyizhang/.npm/registry.npmjs.org/extended-fs/.cache.json
+121 silly resolveWithNewModule extended-fs@0.3.3 checking installable status
+122 silly cache add args [ 'extended-fs@~0.3.1', null ]
+123 verbose cache add spec extended-fs@~0.3.1
+124 silly cache add parsed spec Result {
+124 silly cache add   raw: 'extended-fs@~0.3.1',
+124 silly cache add   scope: null,
+124 silly cache add   name: 'extended-fs',
+124 silly cache add   rawSpec: '~0.3.1',
+124 silly cache add   spec: '>=0.3.1 <0.4.0',
+124 silly cache add   type: 'range' }
+125 silly addNamed extended-fs@>=0.3.1 <0.4.0
+126 verbose addNamed ">=0.3.1 <0.4.0" is a valid semver range for extended-fs
+127 silly addNameRange { name: 'extended-fs', range: '>=0.3.1 <0.4.0', hasData: false }
+128 silly mapToRegistry name extended-fs
+129 silly mapToRegistry using default registry
+130 silly mapToRegistry registry https://registry.npmjs.org/
+131 silly mapToRegistry uri https://registry.npmjs.org/extended-fs
+132 verbose addNameRange registry:https://registry.npmjs.org/extended-fs not in flight; fetching
+133 verbose get https://registry.npmjs.org/extended-fs not expired, no request
+134 silly addNameRange number 2 { name: 'extended-fs', range: '>=0.3.1 <0.4.0', hasData: true }
+135 silly addNameRange versions [ 'extended-fs',
+135 silly addNameRange   [ '0.1.0', '0.2.1', '0.3.0', '0.3.1', '0.3.2', '0.3.3' ] ]
+136 silly addNamed extended-fs@0.3.3
+137 verbose addNamed "0.3.3" is a plain semver version for extended-fs
+138 silly cache afterAdd extended-fs@0.3.3
+139 verbose afterAdd /Users/hongyizhang/.npm/extended-fs/0.3.3/package/package.json not in flight; writing
+140 verbose afterAdd /Users/hongyizhang/.npm/extended-fs/0.3.3/package/package.json written
+141 silly rollbackFailedOptional Starting
+142 silly rollbackFailedOptional Finishing
+143 silly runTopLevelLifecycles Starting
+144 silly runTopLevelLifecycles Finishing
+145 silly install printInstalled
+146 verbose stack Error: No compatible version found: phonegap@~3.1.0
+146 verbose stack Valid install targets:
+146 verbose stack 5.4.0, 5.3.10, 5.3.9, 5.3.8, 5.3.7, 5.3.6, 5.3.5, 5.3.4, 5.3.3, 5.3.2, 5.3.1, 5.2.3, 5.2.2, 5.2.1, 5.2.0, 5.1.1, 5.1.1-0.29.0, 5.0.0-0.28.1, 5.0.0-0.28.0, 5.0.0-0.27.1, 5.0.0-0.27.0, 4.2.0-0.26.0, 4.2.0-0.25.0, 4.2.0-0.24.2, 4.2.0-0.24.1, 4.2.0-0.24.0, 4.2.0-0.23.0, 4.1.2-0.22.12, 4.1.2-0.22.11, 4.1.2-0.22.10, 4.1.2-0.22.9, 4.1.2-0.22.8, 4.1.2-0.22.7, 4.0.0-0.22.7, 3.6.3-0.22.7, 3.6.3-0.22.6, 3.6.3-0.22.5, 3.6.3-0.22.4, 3.6.3-0.22.3, 3.6.3-0.22.2, 3.6.3-0.22.1, 3.6.3-0.22.0, 3.6.0-0.21.19, 3.6.0-0.21.18, 3.5.0-0.21.18, 3.5.0-0.21.17, 3.5.0-0.21.16, 3.5.0-0.21.15, 3.5.0-0.21.14, 3.5.0-0.20.14, 3.5.0-0.20.10, 3.5.0-0.20.9, 3.5.0-0.20.7, 3.5.0-0.20.6, 3.5.0-0.20.5, 3.5.0-0.20.4, 3.5.0-0.20.3, 3.5.0-0.20.1, 3.5.0-0.20.0, 3.5.0-0.19.23, 3.4.0-0.20.0, 3.4.0-0.19.21, 3.4.0-0.19.20, 3.4.0-0.19.19, 3.4.0-0.19.18, 3.4.0-0.19.17, 3.4.0-0.19.16, 3.4.0-0.19.15, 3.4.0-0.19.14, 3.4.0-0.19.13, 3.4.0-0.19.12, 3.4.0-0.19.11, 3.4.0-0.19.10, 3.4.0-0.19.9, 3.4.0-0.19.8, 3.4.0-0.19.7, 3.3.0-0.19.6, 3.3.0-0.19.5, 3.3.0-0.19.4, 3.3.0-0.19.3, 3.3.0-0.19.2, 3.3.0-0.19.1, 3.3.0-0.19.0, 3.3.0-0.18.1, 3.3.0-0.18.0, 3.3.0-0.17.1, 3.2.0-0.17.1, 3.2.0-0.17.0, 3.2.0-0.16.0, 3.2.0-0.15.0, 3.1.0-0.15.0, 3.0.0-rc1-0.13.3, 3.0.0-rc1-0.13.2, 3.0.0-0.14.4, 3.0.0-0.14.3, 3.0.0-0.14.2, 3.0.0-0.14.1, 3.0.0-0.14.0, 2.9.0-rc1-0.12.2, 2.9.0-rc1-0.12.1, 2.9.0-rc1-0.12.0, 2.9.0-0.13.2, 2.9.0-0.13.1, 2.9.0-0.13.0, 2.9.0-0.12.11, 2.9.0-0.12.10, 2.9.0-0.12.9, 2.9.0-0.12.8, 2.9.0-0.12.7, 2.9.0-0.12.6, 2.9.0-0.12.5, 2.9.0-0.12.4, 2.9.0-0.12.3, 2.9.0-0.12.2, 2.8.1-0.11.0, 2.8.0-0.10.6, 2.8.0-0.10.4, 2.8.0-0.10.3, 2.8.0-0.10.2, 2.8.0-0.10.1, 2.8.0-0.10.0, 0.9.4, 0.9.3, 0.9.2, 0.9.1, 0.9.0, 0.8.1, 0.8.0, 0.7.8, 0.7.7, 0.7.6, 0.7.5, 0.7.4, 0.7.3, 0.7.2, 0.7.1, 0.7.0, 0.6.1, 0.6.0, 0.5.0, 0.4.1, 0.4.0, 0.3.0, 0.2.2, 0.2.1, 0.2.0
+146 verbose stack
+146 verbose stack     at pickVersionFromRegistryDocument (/usr/local/lib/node_modules/npm/lib/fetch-package-metadata.js:156:16)
+146 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/iferr/index.js:13:50
+146 verbose stack     at /usr/local/lib/node_modules/npm/lib/utils/pulse-till-done.js:19:8
+146 verbose stack     at saved (/usr/local/lib/node_modules/npm/lib/cache/caching-client.js:168:7)
+146 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/graceful-fs/polyfills.js:210:7
+146 verbose stack     at FSReqWrap.oncomplete (fs.js:82:15)
+147 verbose cwd /Users/hongyizhang/Project/myAngular
+148 error Darwin 14.5.0
+149 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "-g" "generator-phonegap"
+150 error node v4.1.2
+151 error npm  v3.5.2
+152 error No compatible version found: phonegap@~3.1.0
+152 error Valid install targets:
+152 error 5.4.0, 5.3.10, 5.3.9, 5.3.8, 5.3.7, 5.3.6, 5.3.5, 5.3.4, 5.3.3, 5.3.2, 5.3.1, 5.2.3, 5.2.2, 5.2.1, 5.2.0, 5.1.1, 5.1.1-0.29.0, 5.0.0-0.28.1, 5.0.0-0.28.0, 5.0.0-0.27.1, 5.0.0-0.27.0, 4.2.0-0.26.0, 4.2.0-0.25.0, 4.2.0-0.24.2, 4.2.0-0.24.1, 4.2.0-0.24.0, 4.2.0-0.23.0, 4.1.2-0.22.12, 4.1.2-0.22.11, 4.1.2-0.22.10, 4.1.2-0.22.9, 4.1.2-0.22.8, 4.1.2-0.22.7, 4.0.0-0.22.7, 3.6.3-0.22.7, 3.6.3-0.22.6, 3.6.3-0.22.5, 3.6.3-0.22.4, 3.6.3-0.22.3, 3.6.3-0.22.2, 3.6.3-0.22.1, 3.6.3-0.22.0, 3.6.0-0.21.19, 3.6.0-0.21.18, 3.5.0-0.21.18, 3.5.0-0.21.17, 3.5.0-0.21.16, 3.5.0-0.21.15, 3.5.0-0.21.14, 3.5.0-0.20.14, 3.5.0-0.20.10, 3.5.0-0.20.9, 3.5.0-0.20.7, 3.5.0-0.20.6, 3.5.0-0.20.5, 3.5.0-0.20.4, 3.5.0-0.20.3, 3.5.0-0.20.1, 3.5.0-0.20.0, 3.5.0-0.19.23, 3.4.0-0.20.0, 3.4.0-0.19.21, 3.4.0-0.19.20, 3.4.0-0.19.19, 3.4.0-0.19.18, 3.4.0-0.19.17, 3.4.0-0.19.16, 3.4.0-0.19.15, 3.4.0-0.19.14, 3.4.0-0.19.13, 3.4.0-0.19.12, 3.4.0-0.19.11, 3.4.0-0.19.10, 3.4.0-0.19.9, 3.4.0-0.19.8, 3.4.0-0.19.7, 3.3.0-0.19.6, 3.3.0-0.19.5, 3.3.0-0.19.4, 3.3.0-0.19.3, 3.3.0-0.19.2, 3.3.0-0.19.1, 3.3.0-0.19.0, 3.3.0-0.18.1, 3.3.0-0.18.0, 3.3.0-0.17.1, 3.2.0-0.17.1, 3.2.0-0.17.0, 3.2.0-0.16.0, 3.2.0-0.15.0, 3.1.0-0.15.0, 3.0.0-rc1-0.13.3, 3.0.0-rc1-0.13.2, 3.0.0-0.14.4, 3.0.0-0.14.3, 3.0.0-0.14.2, 3.0.0-0.14.1, 3.0.0-0.14.0, 2.9.0-rc1-0.12.2, 2.9.0-rc1-0.12.1, 2.9.0-rc1-0.12.0, 2.9.0-0.13.2, 2.9.0-0.13.1, 2.9.0-0.13.0, 2.9.0-0.12.11, 2.9.0-0.12.10, 2.9.0-0.12.9, 2.9.0-0.12.8, 2.9.0-0.12.7, 2.9.0-0.12.6, 2.9.0-0.12.5, 2.9.0-0.12.4, 2.9.0-0.12.3, 2.9.0-0.12.2, 2.8.1-0.11.0, 2.8.0-0.10.6, 2.8.0-0.10.4, 2.8.0-0.10.3, 2.8.0-0.10.2, 2.8.0-0.10.1, 2.8.0-0.10.0, 0.9.4, 0.9.3, 0.9.2, 0.9.1, 0.9.0, 0.8.1, 0.8.0, 0.7.8, 0.7.7, 0.7.6, 0.7.5, 0.7.4, 0.7.3, 0.7.2, 0.7.1, 0.7.0, 0.6.1, 0.6.0, 0.5.0, 0.4.1, 0.4.0, 0.3.0, 0.2.2, 0.2.1, 0.2.0
+153 error If you need help, you may report this error at:
+153 error     <https://github.com/npm/npm/issues>
+154 verbose exit [ 1, true ]

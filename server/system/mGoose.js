@@ -17,7 +17,7 @@ function mGoose (app, host, port, database) {
 	this.app = app;
 	app.logger.info('DB up [' + host + ':' + port + '/' + database + ']');
 }
-
+mGoose.prototype.create = function(){}
 module.exports = function(app){
 	return new mGoose(app, 
 		app.config.db_host, 
