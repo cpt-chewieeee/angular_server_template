@@ -30,6 +30,11 @@ angular
         controller: 'AboutCtrl',
         controllerAs: 'about'
       })
+      .when('/draw', {
+        templateUrl: 'views/draw.html',
+        controller: 'DrawCtrl',
+        controllerAs: 'draw'
+      })
       .otherwise({
         redirectTo: '/'
       });
