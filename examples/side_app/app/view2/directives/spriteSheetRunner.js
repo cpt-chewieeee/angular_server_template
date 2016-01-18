@@ -22,53 +22,11 @@ angular.module('side_app.view2.directives', [])
                    }
                    w = scope.stage.canvas.width;
                    h = scope.stage.canvas.height;
-                   // manifest = [
-                   //     {src: "spritesheet_grant.png", id: "grant"},
-                   //     {src: "sky.png", id: "sky"},
-                   //     {src: "ground.png", id: "ground"},
-                   //     {src: "hill1.png", id: "hill"},
-                   //     {src: "hill2.png", id: "hill2"}
-                   // ];
-                   // loader = new createjs.LoadQueue(false);
-                   // loader.addEventListener("complete", handleComplete);
-                   // loader.loadManifest(manifest, true, "/app/assets/");
                    
                    loaderSvc.getLoader().addEventListener('complete', handleComplete);
                    loaderSvc.loadAssets(); 
                }
                function handleComplete() {
-                   // sky = new createjs.Shape();
-                   // sky = new Sky({width:w, height:h});
-                   // sky.addToStage(scope.stage)
-                   // var skyImg = loaderSvc.getResult('sky');
-                   //  // console.log(loaderSvc.getLoader());
-                   // sky.graphics.beginBitmapFill(skyImg).drawRect(0, 0, w, h);
-                   // var groundImg = loaderSvc.getResult("ground");
-                   // ground = new createjs.Shape();
-                   // ground.graphics.beginBitmapFill(groundImg).drawRect(0, 0, w + groundImg.width, groundImg.height);
-                   // ground.tileW = groundImg.width;
-                   // ground.y = h - groundImg.height;
-                   // hill = new createjs.Bitmap(loaderSvc.getResult("hill"));
-                   // hill.setTransform(Math.random() * w, h - hill.image.height * 4 - groundImg.height, 4, 4);
-                   // hill.alpha = 0.5;
-                   // hill2 = new createjs.Bitmap(loaderSvc.getResult("hill2"));
-                   // hill2.setTransform(Math.random() * w, h - hill2.image.height * 3 - groundImg.height, 3, 3);
-                   // var spriteSheet = new createjs.SpriteSheet({
-                   //     framerate: 30,
-                   //     "images": [loaderSvc.getResult("grant")],
-                   //     "frames": {"regX": 82, "height": 292, "count": 64, "regY": 0, "width": 165},
-                   //     // define two animations, run (loops, 1.5x speed) and jump (returns to run):
-                   //     "animations": {
-                   //         "run": [0, 25, "run", 1.5],
-                   //         "jump": [26, 63, "run"]
-                   //     }
-                   // });
-                   // grant = new createjs.Sprite(spriteSheet, "run");
-                   // grant.y = 35;
-                   // scope.stage.addChild(sky, hill, hill2, ground, grant);
-                   // scope.stage.addEventListener("stagemousedown", handleJumpStart);
-                   // createjs.Ticker.timingMode = createjs.Ticker.RAF;
-                   // createjs.Ticker.addEventListener("tick", tick);
                     sky = new Sky({
                       width: w, 
                       height: h
@@ -106,6 +64,23 @@ angular.module('side_app.view2.directives', [])
                     scope.stage.addEventListener('stagemousedown', handleJumpStart);
                     createjs.Ticker.timingMode = createjs.Ticker.RAF;
                     createjs.Ticker.addEventListener('tick', tick);
+
+                    window.onkeydown = keydown;
+               }
+               function keydown(event){
+                if (event.keyCode === 38) {//if keyCode is "Up"
+                    handleJumpStart();
+                }
+                if (event.keyCode === 39) {//if keyCode is "Right"
+                  if (scope.status === "paused") {
+                    createjs.Ticker.addEventListener("tick", tick);
+                    scope.status = "running";
+                  }
+                }
+                if (event.keyCode === 37) {//if keyCode is "Left"
+                  createjs.Ticker.removeEventListener("tick", tick);
+                  scope.status = "paused";
+                }
                }
                function handleJumpStart() {
                    grant.playAnimation("jump");
