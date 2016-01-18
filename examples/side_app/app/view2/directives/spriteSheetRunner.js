@@ -6,12 +6,18 @@ angular.module('side_app.view2.directives', [])
            replace : true,
            scope :{
               score: '=score',
-              lifesCount: '=lifesCount'
+              lifesCount: '=lifesCount',
+              width: '=width',
+              height: '=height'
            },
-           template: "<canvas width='960' height='400'></canvas>",
+           template: "<canvas></canvas>",
            link: function (scope, element, attribute) {
                var w, h, sky, grant, ground, hill, hill2, runningSoundInstance, status;
                drawGame();
+               element[0].width = scope.width;
+               element[0].height = scope.height;
+               w = scope.width;
+               h = scope.height;
                function drawGame() {
                    //drawing the game canvas from scratch here
                    //In future we can pass stages as param and load indexes from arrays of background elements etc

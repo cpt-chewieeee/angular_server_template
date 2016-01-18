@@ -6,7 +6,9 @@ angular.module('side_app.view2', ['ngRoute'])
 		controller: 'View2Ctrl'
 	});
 }])
-.controller('View2Ctrl', ['$scope', function($scope){
+.controller('View2Ctrl', ['$scope', '$window', function($scope, $window){
 	$scope.score = 0;
 	$scope.lifesCount = 3;
+	$scope.windowWidth = $window.innerWidth-20;
+	$scope.gameHeight = 400;
 }])
