@@ -5,9 +5,11 @@ angular.module ('side_app', [
 		'side_app.view1',
 		'side_app.view2',
 		'side_app.view2.directives',
-		'side_app.view2.services'
+		'side_app.view2.services',
+		'side_app.view2.uiClasses'
 	])
 	.config(function($routeProvider){
 		$routeProvider.otherwise({redirectTo: '/view1'});
 	});
-var myServices = angular.module('side_app.view2.services', [])
+var myServices = angular.module('side_app.view2.services', []);
+var uiClasses = angular.module('side_app.view2.uiClasses', []);

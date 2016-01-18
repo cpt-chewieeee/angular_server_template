@@ -5,7 +5,6 @@ function (loaderSvc) {
         this.sky = new createjs.Shape();
         this.sky.graphics.beginBitmapFill(loaderSvc.getResult("sky")).drawRect(0, 0, obj.width, obj.height);
     }
-     
     Sky.prototype = {
         addToStage: function (stage) {
             stage.addChild(this.sky);
