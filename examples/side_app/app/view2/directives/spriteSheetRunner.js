@@ -5,10 +5,12 @@ angular.module('side_app.view2.directives', [])
            restrict : 'EAC',
            replace : true,
            scope :{
+              score: '=score',
+              lifesCount: '=lifesCount'
            },
            template: "<canvas width='960' height='400'></canvas>",
            link: function (scope, element, attribute) {
-               var w, h, manifest, sky, grant, ground, hill, hill2;
+               var w, h, sky, grant, ground, hill, hill2, runningSoundInstance, status;
                drawGame();
                function drawGame() {
                    //drawing the game canvas from scratch here
@@ -65,7 +67,14 @@ angular.module('side_app.view2.directives', [])
                     createjs.Ticker.timingMode = createjs.Ticker.RAF;
                     createjs.Ticker.addEventListener('tick', tick);
 
+                    runningSoundInstance = createjs.Sound.play('runningSound', {loop: -1});
+                    scope.status = 'running';
+
                     window.onkeydown = keydown;
+
+                    scope.score = 10;
+                    scope.lifesCount = 2;
+                    scope.$apply();
                }
                function keydown(event){
                 if (event.keyCode === 38) {//if keyCode is "Up"
@@ -74,32 +83,23 @@ angular.module('side_app.view2.directives', [])
                 if (event.keyCode === 39) {//if keyCode is "Right"
                   if (scope.status === "paused") {
                     createjs.Ticker.addEventListener("tick", tick);
+                    runningSoundInstance = createjs.Sound.play('runningSound', {loop: -1});
                     scope.status = "running";
                   }
                 }
                 if (event.keyCode === 37) {//if keyCode is "Left"
                   createjs.Ticker.removeEventListener("tick", tick);
+                  createjs.Sound.stop();
                   scope.status = "paused";
                 }
                }
                function handleJumpStart() {
-                   grant.playAnimation("jump");
+                  if(scope.status === 'running'){
+                    createjs.Sound.play('jumpingSound');
+                    grant.playAnimation("jump");
+                  }
                }
                function tick(event) {
-                 // var deltaS = event.delta / 1000;
-                 // var position = grant.x + 150 * deltaS;
-                 // var grantW = grant.getBounds().width * grant.scaleX;
-                 // grant.x = (position >= w + grantW) ? -grantW : position;
-                 // ground.x = (ground.x - deltaS * 150) % ground.tileW;
-                 // hill.x = (hill.x - deltaS * 30);
-                 // if (hill.x + hill.image.width * hill.scaleX <= 0) {
-                 //     hill.x = w;
-                 // }
-                 // hill2.x = (hill2.x - deltaS * 45);
-                 // if (hill2.x + hill2.image.width * hill2.scaleX <= 0) {
-                 //     hill2.x = w;
-                 // }
-                 // scope.stage.update(event);
                  var deltaS = event.delta / 1000;
                  var position = grant.getX() + 150 * deltaS;
                  grant.setX((position >= w + grant.getWidth()) ? -grant.getWidth() : position);

@@ -4,9 +4,15 @@ myServices.service('loaderSvc', function(){
 		{src: 'sky.png', id: 'sky'},
 		{src: 'hill1.png', id: 'hill'},
 		{src: 'hill2.png', id: 'hill2'},
-		{src: 'ground.png', id: 'ground'}
+		{src: 'ground.png', id: 'ground'},
+		{src: 'runningTrack.mp3', id: 'runningSound'},
+		{src: 'jump.mp3', id: 'jumpingSound'}
 	];
 	var loader = new createjs.LoadQueue(true);
+
+	createjs.Sound.registerPlugins([createjs.HTMLAudioPlugin]);
+
+	loader.installPlugin(createjs.Sound);
 
 	this.getResult = function(asset){
 		// console.log(loader.getResult(asset));

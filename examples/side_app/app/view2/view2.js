@@ -6,6 +6,7 @@ angular.module('side_app.view2', ['ngRoute'])
 		controller: 'View2Ctrl'
 	});
 }])
-.controller('View2Ctrl', function(){
-
-})
+.controller('View2Ctrl', ['$scope', function($scope){
+	$scope.score = 0;
+	$scope.lifesCount = 3;
+}])
