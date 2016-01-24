@@ -32,12 +32,18 @@
 	> cd client/
 	> yo angular:route PATH_DIR
 
+
+### Start DB
+	
+	> mongod --dbpath server/data/db/ --lpath server/data/logs/mongodb.log --logappend
+	> verify: mongo
+
 #### To Do:
 	
 	1. set up server side logger (done)
 	2. server side config file (done)
 	3. mongodb config file and connection (done)
-	4. set up intro pages (home, login, etc)(inprogress)
+	4. set up intro pages (home, login, etc)(done)
 
 --------------------------------------------------------------------
 # NOTES

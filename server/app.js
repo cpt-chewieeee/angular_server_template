@@ -8,7 +8,7 @@ var bodyParser = require('body-parser');
 // var routes = require('./routes/index');
 // var users = require('./routes/users');
 
-var login = require('./routes/login');
+// var login = require('./routes/login');
 
 var app = express();
 
@@ -18,13 +18,13 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 
 
-app.get('/test', function(req, res){
-  res.send([{name:'test'}, {name: 'param2'}]);
+// app.get('/test', function(req, res){
+//   res.send([{name:'test'}, {name: 'param2'}]);
 
-});
-app.get('/test/:id', function(req, res){
-  res.send({id:req.params.id, name:'hi'});
-})
+// });
+// app.get('/test/:id', function(req, res){
+//   res.send({id:req.params.id, name:'hi'});
+// })
 
 
 if(app.get('env') === 'development'){
@@ -53,5 +53,9 @@ if(app.get('env') === 'production'){
   });
 }
 
-app.use('/login', login);
+// app.use('/login', login);
+var router = require('./router')(app);
+app.use(function(err, req, res, next){
+  res.status(err.status || 500);
+});
 module.exports = app;
