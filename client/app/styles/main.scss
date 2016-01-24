@@ -1,8 +1,7 @@
 $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
 // bower:scss
-@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
-
+@import "partials/signup";
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -74,7 +73,7 @@ body {
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
   .container {
-    //ßmax-width: 730px;
+    max-width: 730px;
   }
 
   /* Remove the padding we set earlier */
@@ -116,6 +115,26 @@ body {
     color: #FFFFFFF;
   }
 }
+.row {
+  .vertical-divider {
+    overflow: hidden;
+  }
+  .vertical-divider > div[class^="col-"] {
+    text-align: center;
+    padding-bottom: 100px;
+    margin-bottom: -100px;
+    border-left: 3px solid #f2f7f9;
+    border-rigth: 3px solid #f2f7f9;
+  }
+  .vertical-divider div[class^="col-"]:first-child{
+    border: none;
+  }
+  .vertical-divider div[class^="col-"]:last-child{
+    border: none;
+  }
+
+}
+
 //.fill{width:100%;height:350px;background-position:center;background-size:cover;
 //}
 

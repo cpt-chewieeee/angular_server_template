@@ -6,7 +6,8 @@ angular.module ('side_app', [
 		'side_app.view2',
 		'side_app.view2.directives',
 		'side_app.view2.services',
-		'side_app.view2.uiClasses'
+		'side_app.view2.uiClasses',
+		'side_app.view3'
 	])
 	.config(function($routeProvider){
 		$routeProvider.otherwise({redirectTo: '/view1'});

@@ -3,7 +3,7 @@ uiClasses.factory("Hill", [
  function (loaderSvc) {
     function Hill(obj) {
        this.hill = new createjs.Bitmap(loaderSvc.getResult(obj.assetName));
-       this.hill.setTransform(Math.random() * obj.width,                              obj.height - this.hill.image.height * obj.scaleFactor - obj.groundHeight,
+       this.hill.setTransform(Math.random() * obj.width, obj.height - this.hill.image.height * obj.scaleFactor - obj.groundHeight,
                               obj.scaleFactor, obj.scaleFactor);
     }
     Hill.prototype = {

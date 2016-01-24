@@ -1,0 +1,23 @@
+<p>Name: <input type="text" ng-model="name"></p>
+
+<p ng-bind="name"></p>
+
+<div ng-init="firstName='John'">
+<p>The name is <span ng-bind="firstName"></span></p>
+
+<div data-ng-app="" data-ng-init="firstN='John'">
+
+<p>Again, The name is <span data-ng-bind="firstN"></span></p>
+
+<p>My first expression: {{ 5 + 5 }}</p>
+
+<div ng-controller="View3Ctrl">
+First Name: <input type="text" ng-model="first_name"><br>
+Last Name: <input type="text" ng-model="last_name"><br>
+<br>
+Full Name: {{ first_name + ' ' + last_name }}
+</div>
+<p>~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p>
+<div ng-init="myCol='lightblue'">
+	<input style="background-color:{{myCol}}" ng-model="myCol" value="{{ myCol }}">
+</div>
