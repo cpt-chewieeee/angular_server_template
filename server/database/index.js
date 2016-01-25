@@ -21,10 +21,10 @@ if(process.env.NODE_ENV === 'production'){
 var db = mongoose.connection;
 
 
-db.on('error', console.error.bind(console. 'connection error:'));
+db.on('error', console.error.bind(console, 'connection error:'));
 
 db.once('open', function callback() {
-	console.log('Database Connection Successfully Opened at + userDb');
+	console.log('Database Connection Successfully Opened at' + userDb);
 });
 
 exports.users = UserModel;

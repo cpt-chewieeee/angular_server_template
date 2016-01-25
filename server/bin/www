@@ -10,7 +10,7 @@ app.express_app = require('../app');
 
 app.debug = require('debug')('server:server');
 
-app.mGoose = require('../system/mGoose')(app);
+//app.mGoose = require('../system/mGoose')(app);
 
 app.express_app.set('port', app.config.port);
 
