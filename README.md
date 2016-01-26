@@ -35,7 +35,7 @@
 
 ### Start DB
 	
-	> mongod --dbpath server/data/db/ --lpath server/data/logs/mongodb.log --logappend
+	> mongod --dbpath server/data/db/ --logpath server/data/logs/mongodb.log --logappend
 	> verify: mongo
 
 #### To Do:

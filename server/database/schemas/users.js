@@ -7,7 +7,10 @@ var userSchema = new Schema ({
 	lastname: { type: String, required: true },
 	email: { type: String, required: true, unique: true },
 	password: { type: String, required: true },
-	profile: {}
+	profile: {},
+	date_created: { type: String, required: false },
+	
+	status: { type: Boolean }
 });
 
 userSchema.pre('save', function(next){
