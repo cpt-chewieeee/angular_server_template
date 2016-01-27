@@ -1,0 +1,46 @@
+
+.hero-unit {
+  background-image:url('../images/home.jpg');
+  background-size: cover;
+  background-color: #EEEEEE;
+  color: white;
+  height: 500px;
+  position: relative;
+  bottom: 20px;
+  text-align: center;
+  h1 {
+    padding-top: 100px;
+    color: #ffffff;
+    font-size: 60px;
+    letter-spacing: -1px;
+    line-height: 1;
+    margin-bottom: 0;
+  }
+  h2 {
+    font-size: 25px;
+    color: #FFFFFFF;
+  }
+  p {
+    padding-top: 125px;
+  }
+}
+.row {
+  .vertical-divider {
+    overflow: hidden;
+  }
+  .vertical-divider > div[class^="col-"] {
+    text-align: center;
+    padding-bottom: 100px;
+    margin-bottom: -100px;
+    border-left: 3px solid #f2f7f9;
+    border-rigth: 3px solid #f2f7f9;
+  }
+  .vertical-divider div[class^="col-"]:first-child{
+    border: none;
+  }
+  .vertical-divider div[class^="col-"]:last-child{
+    border: none;
+  }
+
+}
+
